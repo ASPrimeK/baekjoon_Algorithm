@@ -13,7 +13,7 @@ int main() {
     }
     int sum = max = a[0];
     for (int i = 1; i < n; i++) {
-        if (sum + a[i] < 0 || sum < 0) {
+        if (sum < 0) {
             sum = a[i];
         } else {
             sum += a[i];
